@@ -1,0 +1,294 @@
+@media (320px <= width <= 750px){
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+ }
+ 
+.header{
+    position: relative;
+    left: 5%;
+    width: 90%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    text-align: center;
+    
+}
+    .navbar{
+         display: none;
+         position: absolute;
+         right: 0px;
+         top: 110%;
+       }
+     .navicon{
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+     }
+.navbar a{
+color: black;
+display: flex;
+flex-direction: column;
+text-align: center;
+border: 1px solid black;
+border-radius: 10px;
+margin: 3px;
+  }
+  
+
+/* ---------------home--------- */
+  .featured_box{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+  }
+.featured_text{
+    width: 100%;
+}
+.featured_profile{
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------skill----------- */
+.container{
+    position: relative;
+    
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.skill_card{
+    width: 90%;
+    padding: 20px;
+}
+#skill{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: absolute;
+    width: 100%;
+    top: 43rem;
+}
+
+/* ----------------------education------------- */
+
+.empty,.edu-box3,.arrow{
+    display: none !important;
+}
+#education{
+    width: 100%;
+    position: absolute;
+    top: 110rem;
+    padding-top: 250px;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.it,.bsc,.hsl{
+    width: 100%;
+}
+.edu-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.edu-box1,.edu-box2{
+    width: 100%;
+
+}
+/* -----------project */
+#project{
+    padding-top: 130px;
+}
+.main-card{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card{
+    width: 90%;
+}
+.project_card{
+    position: absolute;
+    top: 152rem;
+}
+/* ------------About */
+.about{
+    width: 100%;
+    position: absolute;
+    top: 260rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.end{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#about{
+    padding-top: 150px;
+}
+
+
+
+}
+
+
+
+/* --------700px-------900px------ */
+@media (751px <= width <= 1000px){
+    .container{
+        position: relative;
+    }
+    .header{
+        z-index: 9999;
+    }
+    #home{
+        padding-top: 20px;
+    }
+    .languages{
+        padding-top: 140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-content: center;
+        place-items: center;
+    
+
+    }
+    .skill_card{
+        width: 90%;  
+        padding: 50px;
+    }
+
+       /* -------education--------- */
+.empty,.edu-box3,.arrow{
+    display: none;
+}
+#education{
+    width: 100%;
+    position: absolute;
+    top: 100rem;
+    padding-top: 105px;
+    z-index: 2;
+    
+    
+    
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.it,.bsc,.hsl{
+    width: 19rem;
+}
+.edu-box{
+    display: flex;
+    gap: 5px;
+}
+/* ----------project */
+.main-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+    z-index: 1;
+}
+.flip-card{
+    width: 90%;
+}
+.project_card{
+    position: absolute;
+    top: 130rem;
+}
+/* -------about */
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    top: 220rem;
+    }
+    #about{
+        padding-top: 90px;
+    }
+
+ 
+}
+
+
+    
+@media(320px <= width <= 2500px){
+/* ----------------animation */
+.featured_name span{
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(0,0,0);
+    background-color: rgb(13,110,253,0.5);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 2s ease-in-out alternate infinite, cursor 3s infinite ease-in-out alternate;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0px rgb(13,110,253,0.5),-1px -1px 8px 0px rgb(13,110,253,0.5);
+}
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 210px;    
+    }
+}
+
+.type{
+    font-weight: bolder;
+    letter-spacing: 5px;
+     font-size: 22px;
+     color: rgba(0, 0, 0, 0.9);
+     overflow: hidden;
+     white-space: nowrap;
+     animation: type 2s steps(12) alternate infinite, cursor 3s ;
+     padding: 2px;
+     border-right: 2px solid rgb(10, 10, 10);
+     text-shadow: 2px 2px rgb(13,110,253,0.5); 
+     
+}
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    100% {
+        width:230px ;    
+    }
+}
+}
